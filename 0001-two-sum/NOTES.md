@@ -1,7 +1,9 @@
-* took ~10 mins to come up with solution, 5 mins to code. ~2min no debug. 
+* took ~10 mins to understand problems & come up with solution, 5 mins to code. ~2min no debug. 
 
 
 # approach #1 - brute force. (my initial approach) 
+- pair every element to see if they "complement"
+-- complement  =  subtracting element from target , 
 
 # approach #2 - two-pass hashmap 
 - two-pass means "hashtable used twice" 
