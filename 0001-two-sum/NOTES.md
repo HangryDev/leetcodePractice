@@ -1,6 +1,9 @@
-approach #1 - brute force. (my initial approach) 
+* took ~10 mins to come up with solution, 5 mins to code. ~2min no debug. 
 
-approach #2 - two-pass hashmap 
+
+# approach #1 - brute force. (my initial approach) 
+
+# approach #2 - two-pass hashmap 
 - two-pass means "hashtable used twice" 
 - trades space for speed
 - create hashtable, {key: list value , value : list index}
@@ -8,13 +11,13 @@ approach #2 - two-pass hashmap
 - return if there is complement. 
 - complement cannot be element itself. 
 
-approach #3 - one-pass hashmap
+# approach #3 - one-pass hashmap
 - one-pass means "hashtable used once" 
 - while inserting elements in hashtable, check if complement exists.
 - iterate once less 
 
 
-code toolbox: 
+# code toolbox: 
 - list.index(i)
-- didn't like len(nums)
+- didn't like len(nums) - alternatives?
 
