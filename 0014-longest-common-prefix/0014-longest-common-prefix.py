@@ -14,7 +14,7 @@ class Solution:
                     break;
             else:
                 prefix = prefix[0:ranges]
-                    
+                
         return prefix
         
         
