@@ -22,4 +22,5 @@
 # code toolbox: 
 - list.index(i)
 - didn't like len(nums) - alternatives?
+- breaking out of double for loops : for - else 
 
