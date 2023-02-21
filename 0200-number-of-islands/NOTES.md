@@ -7,6 +7,8 @@ Code Examples:
 # Simple DFS python code beat 90% : https://leetcode.com/problems/number-of-islands/discuss/56585/Simple-DFS-python-code-beat-90
 *재귀 안 쓰는 방법
 
+'''
+
 def numIslands(self, grid):
     """
     :type grid: List[List[str]]
@@ -56,6 +58,6 @@ def numIslands(self, grid):
     return sum
     
     # 
-    
+'''    
     
 
