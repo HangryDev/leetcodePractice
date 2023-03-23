@@ -1,20 +1,23 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        answer = [] 
-        self.dfs(candidates, target, [], answer)
-        return answer 
+        res = []
+        candidates.sort()
+        
+        def dfs(target, index, path):
+            if target < 0:
+                return  # backtracking
+            if target == 0:
+                res.append(path)
+                return 
+            for i in range(index, len(candidates)):
+                dfs(target-candidates[i], i, path+[candidates[i]])
+        
+        dfs(target, 0, [])
+        return res
+          
 
-    def dfs(self, candidates, currentVal, path, answer):
-        # currentVal < 0 : return false 
-        if currentVal < 0 :
-            return
-        # currentVal == 0 : return true. 경로 저장 
-        if currentVal == 0 :
-            answer.append(path)
-            return answer
-        # else (target > 0): 
-        # brute force로 접근. candidates에서 하나씩 다 뺀다. 
-        for i in range(len(candidates)):
-            self.dfs(candidates[i:], currentVal -candidates[i], path+[candidates[i]], answer) 
-
+        
+# 1. path의 사용.
+# 2. return answer 를 통해, combinationSum에 넣을 수 있다  
+# 3. return 0. 이 아니라 return 만 때리면 더 좋다 
 
