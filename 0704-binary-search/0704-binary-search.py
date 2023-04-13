@@ -5,10 +5,10 @@ class Solution(object):
         while start <= end:
             mid = int((start + end) / 2)
             
-            if nums[mid] == target:
+            if target == nums[mid]:
                 return mid
-            elif nums[mid] < target :
-                start = mid + 1
-            else:
+            elif target < nums[mid]:
                 end = mid -1
+            else:
+                start = mid + 1
         return -1
