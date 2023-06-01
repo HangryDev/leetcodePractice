@@ -20,7 +20,6 @@ class Solution:
         
         for i in range(len2-len1+1): 
             substr = s2[i: i+len1]
-            print(counterS1, Counter(substr))
             if counterS1 == Counter(substr):
                 return True
         
